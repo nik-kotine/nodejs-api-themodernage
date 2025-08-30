@@ -6,10 +6,10 @@ const songs = [
   { title: "Take Me Out", artist: "Franz Ferdinand", year: 2004, album: "Franz Ferdinand" },
   { title: "I Bet You Look Good on the Dancefloor", artist: "Arctic Monkeys", year: 2005, album: "Whatever People Say I Am, That's What I'm Not" },
   { title: "Seven Nation Army", artist: "The White Stripes", year: 2003, album: "Elephant" },
-  { title: "Reptilia", artist: "The Strokes", year: 2003, album: "Room on Fire" }
+  { title: "Reptilia", artist: "The Strokes", year: 2003, album: "Room on Fire" },
+  { title: "Creep", artist: "Radiohead", year: 1999, album: "Pablo Honey" }
 ];
 
-// Insertar cada canción en la base de datos
 songs.forEach(song => {
   db.run(
     "INSERT INTO songs (title, artist, year, album) VALUES (?, ?, ?, ?)",
@@ -24,7 +24,6 @@ songs.forEach(song => {
   );
 });
 
-// Cerrar la base de datos después de unos segundos
 setTimeout(() => {
   db.close();
   console.log("Base de datos cerrada. Seed terminado.");
