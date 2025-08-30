@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "15a287a2-2fa4-45ab-a472-858858966b42",
+		"name": "the-modern-age-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43564117"
+	},
+	"item": [
+		{
+			"name": "POST new song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Mr. Brightside\",\r\n    \"artist\": \"The Killers\",\r\n    \"year\": 2033,\r\n    \"album\": \"Hot Fuss\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/songs",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/songs",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET song by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/songs/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"songs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT song by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Mr. Brightside\",\r\n    \"artist\": \"The Killers\",\r\n    \"year\": 2003,\r\n    \"album\": \"Hot Fuss\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/songs/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"songs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE song by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/songs/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"songs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
