@@ -1,0 +1,13 @@
+{
+  "name": "indie-rock-api",
+  "version": "1.0.0",
+  "description": "REST API for alternative/indie rock songs (2000+)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
