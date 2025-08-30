@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Mr. Brightside\",\r\n    \"artist\": \"The Killers\",\r\n    \"year\": 2033,\r\n    \"album\": \"Hot Fuss\"\r\n}",
+					"raw": "{\r\n    \"title\": \"No One Knows\",\r\n    \"artist\": \"Queens of the Stone Age\",\r\n    \"year\": 3002,\r\n    \"album\": \"Songs for the Deaf\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -55,13 +55,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/songs/1",
+					"raw": "{{baseURL}}/songs/7",
 					"host": [
 						"{{baseURL}}"
 					],
 					"path": [
 						"songs",
-						"1"
+						"7"
 					]
 				}
 			},
@@ -74,7 +74,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Mr. Brightside\",\r\n    \"artist\": \"The Killers\",\r\n    \"year\": 2003,\r\n    \"album\": \"Hot Fuss\"\r\n}",
+					"raw": "{\r\n    \"title\": \"No One Knows\",\r\n    \"artist\": \"Queens of the Stone Age\",\r\n    \"year\": 2002,\r\n    \"album\": \"Songs for the Deaf\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -82,13 +82,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}/songs/1",
+					"raw": "{{baseURL}}/songs/7",
 					"host": [
 						"{{baseURL}}"
 					],
 					"path": [
 						"songs",
-						"1"
+						"7"
 					]
 				}
 			},
@@ -100,13 +100,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/songs/1",
+					"raw": "{{baseURL}}/songs/7",
 					"host": [
 						"{{baseURL}}"
 					],
 					"path": [
 						"songs",
-						"1"
+						"7"
 					]
 				}
 			},
